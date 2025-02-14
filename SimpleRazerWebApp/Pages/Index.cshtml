@@ -1,0 +1,19 @@
+﻿@page 
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2> @ViewData["Title"] </h2>
+
+@*
+    The page directive indicates that it is a razor page. The model directive with IndexModel indicates model class that is associated with the razor page
+    where the model class is placed in file commonly known as "code behind file" with .cs extension.
+    
+    The model class inherits from PageModel and contains the page handlers.
+*@
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
