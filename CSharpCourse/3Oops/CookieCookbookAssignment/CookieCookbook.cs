@@ -26,7 +26,7 @@ public class CookieCookbook
         _recipe.PrintExistingRecipes(filePath);
         _recipe.ShowIngredients();
         var ingredients = _recipe.GetUserRecipe();
-        if(ingredients.Count > 0)
+        if (ingredients.Count > 0)
         {
             var userRecipe = new UserRecipe(_ingredientRepository, ingredients);
             _userInteraction.ShowMessage("Recipe added:");

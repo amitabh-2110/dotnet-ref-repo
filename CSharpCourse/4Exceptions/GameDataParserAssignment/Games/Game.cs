@@ -12,6 +12,7 @@ public class Game
 
     public override string ToString()
     {
-        return $"{Title}, released in {ReleaseYear}, rating: {Rating}";
+        string data = $"{Title}, released in {ReleaseYear}, rating: {Rating}";
+        return data;
     }
 }

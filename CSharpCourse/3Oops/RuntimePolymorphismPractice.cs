@@ -52,10 +52,10 @@ public class RuntimePolymorphismPractice
     public List<string> ProcessAll(List<string> words)
     {
         var stringsProcessors = new List<StringsProcessor>
-            {
-                new StringsTrimmingProcessor(),
-                new StringsUppercaseProcessor()
-            };
+        {
+            new StringsTrimmingProcessor(),
+            new StringsUppercaseProcessor()
+        };
 
         List<string> result = words;
         foreach (var stringsProcessor in stringsProcessors)
@@ -67,7 +67,7 @@ public class RuntimePolymorphismPractice
 }
 
 // implement here
-public class StringsProcessor
+public abstract class StringsProcessor
 {
     public List<string> Process(List<string> input)
     {
@@ -79,10 +79,7 @@ public class StringsProcessor
         return output;
     }
     
-    protected virtual string GetProcessedString(string str)
-    {
-        return str;
-    }
+    protected abstract string GetProcessedString(string str);
 }
 
 public class StringsTrimmingProcessor : StringsProcessor

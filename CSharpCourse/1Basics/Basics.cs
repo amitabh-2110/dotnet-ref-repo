@@ -60,6 +60,13 @@ public class Basics
         StaticPrintNum();
         Console.WriteLine("num1:" + num1 + ", num2:" + num2 + ", num3:" + num3);
 
+        var names = new Names();
+        Console.WriteLine(names.All.Count);
+        // here list is a reference type, means it holds the reference to the list object. So calling Clear() will modify the object not the reference which names.All holds. That's why it works
+        // names.All.Clear(); error
+        Console.WriteLine(names.All.Count);
+
+
         return PrintNum;
     }
 
@@ -116,4 +123,9 @@ public class Basics
         list.Remove(0);
         Console.WriteLine($"list cap: {list.Count}");
     }
+}
+
+class Names 
+{
+  public IReadOnlyList<string> All { get; } = ["1", "2", "3"];
 }

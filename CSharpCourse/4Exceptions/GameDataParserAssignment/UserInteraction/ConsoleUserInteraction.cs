@@ -29,7 +29,7 @@ public class ConsoleUserInteraction: IUserInteraction
         foreach(var game in games)
         {
             Console.WriteLine(game);
-        } 
+        }
         return;
     }
 

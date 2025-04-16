@@ -6,6 +6,9 @@ public class RecipeRepository: IRecipeRepository
 {
     private readonly IFileIORepository _fileIORepository;
 
+    // Environment.NewLine gets calculated at the runtime not at compile time so can't use const
+    private static readonly string NewLineSeperator = Environment.NewLine;
+
     private const string Separator = ",";
 
     public RecipeRepository(IFileIORepository fileIORepository)

@@ -44,7 +44,7 @@ public abstract class Animal
         Console.WriteLine("Animal is walking");
     }
 
-    // here the abstract method forces the derived class to override it and abstract members are implicity virtual
+    // here the abstract method forces the derived class to override it and abstract members are implicity virtual and don't have body
     public abstract void Talk();
 }
 

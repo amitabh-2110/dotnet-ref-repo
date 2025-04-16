@@ -16,7 +16,7 @@ public class DoctorAppointment
     public readonly string _patientName;
     private DateTime _appointmentDate;
 
-    public int MyProp { get; } = 1; // property without setter here is as good as public readonly
+    public int MyProp { get; } // property without setter here is as good as public readonly
 
     public DoctorAppointment(string patientName, int daysToAdd = 7) // default optional parameters value must be compile time constant and present after all parameters
     {
@@ -81,7 +81,7 @@ public class Order
 public class Person
 {
     public string Name { get; set; } = "";
-    public int Age { get; init; }
+    public int Age { get; init; } // age can be initialized only but cannot be set
 }
 
 // here static classes are implicitly sealed means we can't inherit from them

@@ -27,6 +27,11 @@ If a class contains only static methods then the class can be made as static. Th
 ![diff abstract class, interface 1](images/image-1.png)
 ![diff abstract class, interface 2](images/image-2.png)
 
+## Single Responsibility (S in SOLID Principles)
+
+- There should be single reason to change a class.
+- 
+
 ## Dependency Inversion (D in SOLID Principles)
 
 It says that a class should depend on abstractions, not on concrete types means the dependencies should be abstractions instead of being concrete.
